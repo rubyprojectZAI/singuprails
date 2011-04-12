@@ -7,8 +7,20 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
+	<div id="page_top">
+		<div id="top">
+			<div id="logo" class="corners"><h1>RoR Tutorial</h1></div>
+		</div>
+	</div>
+	<div id="page_middle">
+		<div id="main" class="corners">
+			<div id="content">
+				<%= yield %>
+			</div>
 
-<%= yield %>
+		</div>
+	</div>
+	<div id="page_bottom"></div>
 
 </body>
 </html>
