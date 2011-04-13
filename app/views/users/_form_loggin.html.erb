@@ -1,0 +1,12 @@
+<% form_tag :controller => "users", :action => "index",:method => "post" do %>
+  <div class="field">
+    <%= label_tag (:email) %><br />
+    <%= text_field_tag (:email) %>
+  </div>
+  <div class="field">
+    <%= label_tag (:password) %><br />
+    <%= password_field_tag (:password) %>
+  <div class="actions">
+    <%= submit_tag ("Loggin") %>
+  </div>
+<% end %>
