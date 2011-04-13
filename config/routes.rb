@@ -1,6 +1,7 @@
 Signuprails::Application.routes.draw do 
 	
   	get "users/index"
+  	post "users/index"
 	resources :users
 
 
